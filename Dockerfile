@@ -14,6 +14,6 @@ FROM alpine:latest
 RUN apk --update add --no-cache stoken
 COPY --from=builder /root/.stokenrc /root/
 
-#ENTRYPOINT ["stoken"]
-#CMD ["tokencode"]
+ENTRYPOINT ["stoken"]
+CMD ["tokencode"]
 
